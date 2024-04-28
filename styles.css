@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 24px;
+    background-color: #0B0210;
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2 {
+  margin-top: 0;
+  color: white;
+}
+
+p {
+  color: rgb(210, 210, 210);
+}
+
+img {
+  max-width: 100%;  /* Ensure the image does not exceed the width of the div */
+    height: auto;     /* Maintain the aspect ratio */
+    display: block; 
+}
+
+.mydiv {
+    position: absolute;
+    z-index: 9;
+    background-color: #170F1C;
+    border: 1px solid #2F2734;
+    border-radius: 8px;
+  }
+
+  :hover.mydiv {
+    border-color: #0ED9B4;
+  }
+  
+  .mydivheader {
+    cursor: move;
+    z-index: 10;
+    background-color: #130A18;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    padding: 8px 8px 8px 16px;
+  }
+
+  .dragcontent {
+    padding: 24px;
+  }
+
+  #trashcan { 
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #221629; 
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1000; 
+    padding: 8px;
+  }
+
+  .copyright {
+    position: fixed;
+    bottom: 8px;  
+    left: 20px; 
+  }
+p.copyright {
+  color: #ffffff50;
+  font-size: 16px;
+}
